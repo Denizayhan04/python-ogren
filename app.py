@@ -15,7 +15,7 @@ isimstring = "birikiüc"
 print(isimstring[0:4])
 print(isimstring[0:4:1])
 print(isimstring[0:4:2])
-print("tr \" asd")
+print("tr \" asd"f)
 print("tr \nasd")
 print("trasd" * 3 )
 print("trasd".upper())
@@ -62,7 +62,7 @@ print("bura",
 print(insan) """
 
 
-kimlik = {
+""" kimlik = {
     "isim":"ali",
     "soyisim":"Veli",
     "tc":15163534531
@@ -71,3 +71,45 @@ print(kimlik.items())
 print(kimlik.get("isim"))
 print(kimlik.update({"isim":"yok"}))
 print(kimlik)
+ """
+""" dizi = [1,2,3,4]
+print(2 in dizi)
+print(8 in dizi)
+print(8  not in dizi)
+sifre = input("sifre gir:\n")
+print("sifren {}".format(sifre))
+
+if True:
+    pass """
+
+"""x = 0
+
+while x<21:
+    x+=1
+    if x == 16:
+      continue
+    print(x)"""
+
+"""x=[1,2,3,4,5,6,7,8,9]
+
+
+for sayi in x:
+    print(sayi)"""
+"""
+def alan (r,pi):
+    return(r*r*pi)
+
+
+print(alan(2,3.14))"""
+
+""" print("123","456",sep="/",end="?") """
+
+def kimlik(isim,soyisim,yas,tc):
+    print("isim :{} , soyisim :{} , yaş :{} , tckno :{}".format(isim,soyisim,yas,tc))
+
+def kimlik2(isim="Boş",soyisim="Boş",yas="Boş",tc="Boş"):
+    print("isim :{} , soyisim :{} , yaş :{} , tckno :{}".format(isim,soyisim,yas,tc))
+
+kimlik("ali","keser",25,19127754288)
+kimlik2("ali","keser",25)
+kimlik2(soyisim="keser",tc=25)
